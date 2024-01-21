@@ -1,0 +1,15 @@
+#[it is being used for configuraion the pythn project it is alternative of the setup.cfg file.
+it contains configuratin related to the build system
+such as build tool used packages , author license and dependencies]
+[build-system]
+requires = ['setuptools>=42.0',"wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+testpaths = [
+"tests"
+]
+
+[tool.mypy]
+mypy_path = "src"
+ignore_missing_imports = true
